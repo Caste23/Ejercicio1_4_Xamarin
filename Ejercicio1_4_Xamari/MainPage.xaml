@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_4_Xamari.MainPage">
+
+    <StackLayout>
+        <ScrollView>
+    
+
+
+            <StackLayout Orientation="Vertical">
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                    <Label Text="Ejercicio 1.4" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                </Frame>
+                <Image x:Name="img"  HeightRequest="300" WidthRequest="100" BackgroundColor="Azure" Margin="20,0,20,0"/>
+                <Label Text="Nombre" FontSize="Subtitle" Padding="30,10,30,0"/>
+                <Entry x:Name="txtnombre" Placeholder="ingreso su nombre" Margin="30,0,30,0" FontSize="Subtitle"/>
+                <Label Text="Descripcion" FontSize="Subtitle" Padding="30,10,30,0"/>
+                <Entry x:Name="txtdescripcion" Placeholder="ingrese una descripcion " Margin="30,0,30,0" FontSize="Subtitle"/>
+
+                <Button Text="Tomar Foto" x:Name="btnFoto" Clicked="btnFoto_Clicked" Margin="0,30,30,0" WidthRequest="150" HorizontalOptions="Center"/>
+                <Button Text="a SQlite" x:Name="btnSQlite" Clicked="btnSQlite_Clicked" Margin="0,30,30,0" WidthRequest="150" HorizontalOptions="Center" />
+            </StackLayout>
+
+ 
+        </ScrollView>
+
+
+    </StackLayout>
+
+</ContentPage>
